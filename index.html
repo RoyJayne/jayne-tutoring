@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JAYNE TUTORING</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+    }
+
+    /* =========================
+       NAVIGATION BAR
+    ========================= */
+
+    nav {
+      width: 100%;
+      height: 70px;
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 8%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 340px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .flower {
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 15px;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       MAIN MENU
+    ========================= */
+
+    .container {
+      width: min(1000px, 90%);
+      margin: 0 auto 100px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+
+      padding: 30px;
+
+      text-decoration: none;
+      color: #222;
+
+      border: 1px solid #ececec;
+
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      nav {
+        padding: 0 5%;
+      }
+
+      .nav-links {
+        gap: 14px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 29px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav>
+
+    <div class="logo">
+      JAYNE TUTORING
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#home">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="#menu">
+          Student
+        </a>
+      </li>
+
+      <li>
+        <a href="#tests">
+          Tests
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+
+
+  <!-- =========================
+       HOME
+  ========================== -->
+
+  <section class="hero" id="home">
+
+    <div class="flower">
+      🌸
+    </div>
+
+    <h1>
+      JAYNE TUTORING
+    </h1>
+
+    <p>
+      수업 일정, 학습 기록, 레벨 테스트와<br>
+      필요한 자료를 한 곳에서 확인할 수 있습니다.
+    </p>
+
+  </section>
+
+
+
+  <!-- =========================
+       STUDENT MENU
+  ========================== -->
+
+  <main class="container" id="menu">
+
+    <h2 class="section-title">
+      Student
+    </h2>
+
+
+    <div class="cards">
+
+
+      <!-- 수업 기록 -->
+
+      <a
+        class="card"
+        href="https://docs.google.com/spreadsheets/d/1LZm0uJEWUealLgT-htavsZh1_WSUfr60JSc7j_H9fXE/edit?gid=88138455#gid=88138455"
+        target="_blank"
+      >
+
+        <h2>
+          수업 기록
+        </h2>
+
+        <p>
+          수업 진도와 학습 기록을 확인합니다.
+        </p>
+
+      </a>
+
+
+
+      <!-- Lesson Scheduler -->
+
+      <a
+        class="card"
+        href="https://royjayne.github.io/lesson-scheduler/"
+        target="_blank"
+      >
+
+        <h2>
+          Lesson Scheduler
+        </h2>
+
+        <p>
+          예정된 수업 일정과 학습 계획을 확인합니다.
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </main>
+
+
+
+  <!-- =========================
+       TESTS
+  ========================== -->
+
+  <section class="container" id="tests">
+
+    <h2 class="section-title">
+      Level Tests
+    </h2>
+
+
+    <div class="cards">
+
+
+      <!-- Japanese Level Test -->
+
+      <a
+        class="card"
+        href="./japanese-level-test.pdf"
+        target="_blank"
+      >
+
+        <h2>
+          Japanese Level Test
+        </h2>
+
+        <p>
+          현재 일본어 실력을 확인하기 위한 레벨 테스트입니다.
+        </p>
+
+      </a>
+
+
+
+      <!-- TOEFL Quick Test -->
+
+      <a
+        class="card"
+        href="https://royjayne.github.io/toefl-quick-level-test/"
+        target="_blank"
+      >
+
+        <h2>
+          TOEFL Quick Level Test
+        </h2>
+
+        <p>
+          TOEFL 영역별 실력을 빠르게 확인합니다.
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+    JAYNE TUTORING
+  </footer>
+
+
+</body>
+</html>
