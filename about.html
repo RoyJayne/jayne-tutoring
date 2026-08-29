@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About | JAYNE TUTORING</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    nav {
+      width: 100%;
+      height: 70px;
+      background: white;
+      border-bottom: 1px solid #e5e5e5;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 0 8%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo a {
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .back {
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .back:hover {
+      color: #000;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 100px 25px 60px;
+    }
+
+    .intro-label {
+      font-size: 12px;
+      color: #999;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .intro h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .intro-text {
+      color: #666;
+      font-size: 16px;
+      max-width: 700px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 25px 100px;
+    }
+
+    .section {
+      background: white;
+      border: 1px solid #ececec;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .main-info {
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .sub-info {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .item {
+      margin-bottom: 17px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .subjects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .subject {
+      border: 1px solid #ddd;
+      border-radius: 100px;
+      padding: 7px 14px;
+      font-size: 13px;
+      color: #555;
+      background: #fafafa;
+    }
+
+    footer {
+      text-align: center;
+      color: #aaa;
+      font-size: 12px;
+      padding: 35px;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 0 5%;
+      }
+
+      .intro {
+        padding-top: 70px;
+      }
+
+      .intro h1 {
+        font-size: 34px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+      <a href="./index.html">
+        JAYNE TUTORING
+      </a>
+    </div>
+
+    <a class="back" href="./index.html">
+      Student Portal
+    </a>
+
+  </nav>
+
+
+  <header class="intro">
+
+    <div class="intro-label">
+      ABOUT
+    </div>
+
+    <h1>
+      Hi, I'm Jayne.
+    </h1>
+
+    <p class="intro-text">
+      I provide personalized tutoring based on each student's current level,
+      academic goals, and learning pace. I focus on building a clear study plan,
+      tracking progress, and continuously adjusting lessons as the student improves.
+    </p>
+
+  </header>
+
+
+  <main class="container">
+
+
+    <!-- EDUCATION -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Education
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          Waseda University
+        </div>
+
+        <div class="sub-info">
+          Department of Physics, Undergraduate
+        </div>
+
+        <div class="sub-info">
+          Japanese-taught degree program
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- QUALIFICATIONS + TEACHING AREAS -->
+
+    <div class="two-column">
+
+      <section class="section">
+
+        <div class="section-title">
+          Qualifications
+        </div>
+
+        <div class="item">
+          <div class="main-info">
+            TOEFL iBT — 113
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="main-info">
+            JLPT — N1
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="section">
+
+        <div class="section-title">
+          Teaching Areas
+        </div>
+
+        <div class="subjects">
+
+          <span class="subject">JLPT</span>
+          <span class="subject">EJU</span>
+          <span class="subject">TOEFL</span>
+          <span class="subject">AP Calculus</span>
+          <span class="subject">SAT</span>
+          <span class="subject">Mathematics</span>
+          <span class="subject">Physics</span>
+          <span class="subject">English Conversation</span>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- UNIVERSITY ACCEPTANCES -->
+
+    <section class="section">
+
+      <div class="section-title">
+        University Acceptances
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          Waseda University
+        </div>
+        <div class="sub-info">
+          Physics
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          Kobe University
+        </div>
+        <div class="sub-info">
+          Physics
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          Tokyo University of Science
+        </div>
+        <div class="sub-info">
+          Physics
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ENTRANCE EXAM EXPERIENCE -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Entrance Exam Experience
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          EJU
+        </div>
+
+        <div class="sub-info">
+          Examination for Japanese University Admission for International Students
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          TOEFL
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          TOEIC
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          JLPT
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          Japanese University General Entrance Examinations
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="main-info">
+          University-Specific Entrance Examinations
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- TEACHING EXPERIENCE -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Experience
+      </div>
+
+
+      <div class="item">
+
+        <div class="main-info">
+          AP Calculus & SAT
+        </div>
+
+        <div class="sub-info">
+          Tutored international school students in mathematics,
+          with a primary focus on AP Calculus and SAT preparation.
+        </div>
+
+      </div>
+
+
+      <div class="item">
+
+        <div class="main-info">
+          English Conversation
+        </div>
+
+        <div class="sub-info">
+          Taught conversational English to younger students
+          through interactive and age-appropriate lessons.
+        </div>
+
+      </div>
+
+
+      <div class="item">
+
+        <div class="main-info">
+          Japanese & EJU
+        </div>
+
+        <div class="sub-info">
+          Provide individualized Japanese and EJU tutoring
+          based on each student's current level and academic goals.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEACHING APPROACH -->
+
+    <section class="section">
+
+      <div class="section-title">
+        Teaching Approach
+      </div>
+
+      <p class="sub-info">
+        I tailor each lesson to the student's current level and individual goals.
+        Based on initial assessments and ongoing progress, I create a personalized
+        study plan and continuously adjust it as the student improves.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    JAYNE TUTORING
+  </footer>
+
+</body>
+</html>
